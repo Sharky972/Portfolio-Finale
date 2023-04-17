@@ -53,14 +53,14 @@
 
                 &:hover,
                 &.active {
-                    color: $primary;
+                    color: $twilightorange;
                 }
             }
         }
     }
 
     &.affix {
-        background: $white;
+        background: $sandyellow;
 
         border-bottom: 1px solid rgba($border-color, 0.34);
 

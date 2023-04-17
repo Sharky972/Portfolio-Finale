@@ -13,7 +13,7 @@
 
     a,
     p {
-        color: $gray-800;
+        color: $sandyellow;
         padding: 4px 0;
         display: inline-block;
         margin: 0;
@@ -36,12 +36,12 @@
             line-height: 40px;
             text-align: center;
             border: 2px solid $gray-600;
-            color: $gray-600;
+            color: $sandyellow;
 
             &:hover {
-                background: $primary;
-                border-color: $primary;
-                color: $white;
+                background: $sandyellow;
+                border-color: $sandyellow;
+                color: $twilightorange;
                 text-decoration: none;
             }
         }

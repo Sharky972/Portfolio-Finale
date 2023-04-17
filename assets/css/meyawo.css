@@ -9671,10 +9671,10 @@ pre .code {
   text-decoration: none;
 }
 .custom-navbar .nav .item .link:hover, .custom-navbar .nav .item .link.active {
-  color: #1b53b3;
+  color: #d7495e;
 }
 .custom-navbar.affix {
-  background: #2a5aae;
+  background: #e7bd35;
   border-bottom: 1px solid rgba(222, 226, 230, 0.34);
 }
 .custom-navbar.affix .logo {
@@ -9887,7 +9887,7 @@ pre .code {
 }
 .footer a,
 .footer p {
-  color: #393e46;
+  color: #e7bd35;
   padding: 4px 0;
   display: inline-block;
   margin: 0;
@@ -9908,12 +9908,12 @@ pre .code {
   line-height: 40px;
   text-align: center;
   border: 2px solid #6c757d;
-  color: #6c757d;
+  color: #e7bd35;
 }
 .footer .social-links a:hover {
-  background: #1b53b3;
-  border-color: #1b53b3;
-  color: #2a5aae;
+  background: #e7bd35;
+  border-color: #e7bd35;
+  color: #d7495e;
   text-decoration: none;
 }
 
@@ -10266,6 +10266,60 @@ body::-webkit-scrollbar-thumb {
   .screen3 {
     height: 100%;
     width: 100%;
+  }
+}
+.sun {
+  width: 20rem;
+  height: 20rem;
+  margin: 3rem auto;
+  position: relative;
+  background: radial-gradient(transparent 50%, white), radial-gradient(rgb(253, 253, 191), transparent 70%);
+  -webkit-mask-image: radial-gradient(rgb(0, 0, 0) 40%, transparent 65%);
+  mask-image: radial-gradient(rgb(0, 0, 0) 40%, transparent 65%);
+  border-radius: 50%;
+}
+.sun::after, .sun::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  border-radius: 50%;
+  -webkit-mask-image: radial-gradient(rgb(0, 0, 0) 40%, transparent 65%);
+  mask-image: radial-gradient(rgb(0, 0, 0) 40%, transparent 65%);
+}
+.sun::before {
+  background: repeating-conic-gradient(from 0deg, yellow 0deg 20deg, transparent 20deg 40deg);
+}
+.sun::after {
+  background: radial-gradient(yellow, orange 27%, transparent calc(27% + 3px) 100%), radial-gradient(gold, transparent 70%), repeating-conic-gradient(from 0deg, gold 0deg 5deg, transparent 5deg 10deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
