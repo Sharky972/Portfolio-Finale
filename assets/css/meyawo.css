@@ -9937,7 +9937,7 @@ pre .code {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/Ocean\ V2.svg);
+  background-image: url("/Ocean-V2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10102,7 +10102,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .screen2 {
-  background-image: url("/Ocean-2.5s-1879px copy.svg");
+  background-image: url("/Ocean-contact.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
